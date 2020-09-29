@@ -20,11 +20,11 @@ Note: You must have installed Java (version 8 or higher), Maven (can be used as 
 
 (1.) Clone the repository
 
-(2.) Open the project and make sure to cd into the folder named API within the repository
+(2.) Open the project and make sure to cd into the folder named API within the repository (This can be within your command line interface or within IntelliJ.)
 
 (3.) Open PgAdmin and under the username and password 'root', create a database called 'amazinDb'. This will allow for storage of information found in your sql migration files in the server repository.
 
-(4.) Run the command 'mvn(w) spring-boot:start'
+(4.) Back in the command line or IntelliJ, run the command 'mvn(w) spring-boot:start'
 
  - If you make updates to the sql seed files, a 'mvn(w) clean' and 'mvn(w) flyway:clean' should be preformed before the server is started to ensure there is not conflict of migrations.
 
