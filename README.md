@@ -1,59 +1,36 @@
-# server-Amazin
+# **Amazin - Server (Retail Site Clone)**
 
-This is the server (back-end) side of our Amazin' project created by Talent Path's 'Quaran-Team!' of full stack developers.
+This is the server side of our Amazin project created by Talent Path's 'Quaran-Team' of full stack developers located in Atlanta, GA and Houston, TX.
 
-<!-- Picture below of home page of our Amazin' App  -->
+The goal of this project was to practice weekly agile sprints by creating an e-commerce product page(s) for 20 items in a very similar theme to that of the commonly known retail site Amazon.
 
-![alt text](https://github.com/Quaran-Team/client-Amazin/blob/master/amazinscreen.JPG "Screen shot from the Amazin' App mock e-commerce site")
+Each team member made contributions to the client, server, and database of the project in order to understand how a full stack application functions.
 
----
+The client repository can be found here _-_ GitHub Repo = https://github.com/Quaran-Team/client-Amazin .
 
-The goal was to practice weekly agile sprints by creating an e-commerce product page(s) for 20-50 items in a very similar theme to that big one named after the giant river in South America.
+We created the server utilizes Java Spring Boot for bean creation, Maven for our dependencies, and FlyWay to manage our database migrations. 
 
-Each team member has made contributions to both client (front - end) and server (back - end) sides of the project connecting their data to their components.
-
-The client side can be found here _-_ GitHub Repo = https://github.com/Quaran-Team/client-Amazin .
-
-And live deployed at ... {}.
-
----
-
-We created the server in Java using Spring-Boot. Using Maven for our dependencies and Fly Way to manage our data migrations. 
-
-Due to time constraints some parts are just static mocks, while others are fully dynamic.
-
+The server is not currently deployed anywhere but can be cloned and run in our preferred IDE, IntelliJ. This will also require PostgreSQL to function.
 
 ---
 
 To run it locally:
-Before cloning down install Java (version 8 or higher), Install Maven, Install Postgres and PgAdmin
 
-- clone down the repo
+Note: You must have installed Java (version 8 or higher), Maven (can be used as mvn or mvnw), and Postgres with PgAdmin
 
-- run the program either in an ide (we used either intelli-J or vs code) by opening the folder you just cloned down into one and clicking the little green play button arrow for the file ApiApplication.java ... or ...
+(1.) Clone the repository
 
-via CLI
+(2.) Open the project and make sure to cd into the folder named API within the repository
 
-- make sure you cd into the folder named API then in command line use 
+(3.) Run the command 'mvn(w) spring-boot:start'
 
- ```'mvn spring-boot:start'```
+ - If you make updates to the sql seed files, a 'mvn(w) clean' and 'mvn(w) flyway:clean' should be preformed before the server is started to ensure there is not conflict of migrations.
 
-If updates have been made to the sql seed files a migration clean should be preformed.
-This involves running the commands 
+ - If you get an error command not found MVN you will need to download and install it locally which can be done here: https://maven.apache.org/download.cgi
 
-```'mvn flyway:clean' ```
+(4.) To see the raw Json while the server is running visit "http://localhost:8080/api/v1/items" or "http://localhost:8080/api/v1/totalstars/"
 
-followed by
-
-``` 'mvn clean' ```
-
-before starting the server.
-
-If you get an error command not found MVN you will need to download and install it locally which can be done here: https://maven.apache.org/download.cgi
-
-To see the raw Json while the server is running visit "http://localhost:8080/api/v1/items" or "http://localhost:8080/api/v1/totalstars/"
-
-
+![alt text](https://github.com/Quaran-Team/client-Amazin/blob/master/amazinscreen.JPG "Screen shot from the Amazin' App mock e-commerce site")
 
 ---
 
