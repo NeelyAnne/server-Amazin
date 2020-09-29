@@ -22,13 +22,15 @@ Note: You must have installed Java (version 8 or higher), Maven (can be used as 
 
 (2.) Open the project and make sure to cd into the folder named API within the repository
 
-(3.) Run the command 'mvn(w) spring-boot:start'
+(3.) Open PgAdmin and under the username and password 'root', create a database called 'amazinDb'. This will allow for storage of information found in your sql migration files in the server repository.
+
+(4.) Run the command 'mvn(w) spring-boot:start'
 
  - If you make updates to the sql seed files, a 'mvn(w) clean' and 'mvn(w) flyway:clean' should be preformed before the server is started to ensure there is not conflict of migrations.
 
  - If you get an error command not found MVN you will need to download and install it locally which can be done here: https://maven.apache.org/download.cgi
 
-(4.) To see the raw Json while the server is running visit "http://localhost:8080/api/v1/items" or "http://localhost:8080/api/v1/totalstars/"
+(5.) To see the raw Json while the server is running visit "http://localhost:8080/api/v1/items" or "http://localhost:8080/api/v1/totalstars/"
 
 ![alt text](https://github.com/Quaran-Team/client-Amazin/blob/master/amazinscreen.JPG "Screen shot from the Amazin' App mock e-commerce site")
 
